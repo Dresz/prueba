@@ -4,7 +4,7 @@ import (
   "net/http"
 	"io/ioutil"
   "strings"
-  "google.golang.org/appengine"
+  //"google.golang.org/appengine"
 )
 
 func handler(w http.ResponseWriter, r *http.Request) {
@@ -35,7 +35,7 @@ req.Header.Add("cache-control", "no-cache")
 }
 func main() {
   http.HandleFunc("/", handler) // Set endpoint handler
-  appengine.Main() // Start the server
+  //appengine.Main() // Start the server
 }
 
 //EAADNGF3mxwMBAC8VNUbnyrihiXpM2nQ5m8avo3LdZCPSZCnpy469HSwOVkoFaz9S4S5L0w8I7w4y4xCgZAylgQ1B7ukislASxeq1zOVsohmFUWGoi42K8DWRP4j8fh8Ht3ZCOg2uYIBWJEvQKTl1ZA8ZCBTaCgRCSkK4qqtdlEOQZDZD
